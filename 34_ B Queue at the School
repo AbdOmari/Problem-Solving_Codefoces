@@ -1,0 +1,20 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	int num, t;
+	cin >> num >> t;
+	string girlboy;
+	cin >> girlboy;
+	while (t--)
+	{
+		for (int i = 0; i < girlboy.length(); i++)
+		{
+			if (girlboy[i] == 'B' && girlboy[i + 1] == 'G') {
+				swap(girlboy[i], girlboy[i + 1]);
+				i++;
+			}
+		}
+	}
+	cout << girlboy;
+}
