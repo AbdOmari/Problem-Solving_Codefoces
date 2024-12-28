@@ -1,0 +1,11 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	string series;
+	cin >> series;	
+	series[0] = toupper(series[0]);
+	cout << series;
+	
+
+}
