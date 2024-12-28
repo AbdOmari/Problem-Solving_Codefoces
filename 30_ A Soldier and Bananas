@@ -1,0 +1,32 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	int price, balance, numOfBanana , ans=0;
+	cout << "enter price of banana" << endl;
+	cin >> price;
+	cout << endl;
+
+	cout << "enter your balance" << endl;
+	cin >> balance;
+	cout << endl;
+
+	cout << "enter number of banana" << endl;
+	cin >> numOfBanana;
+	cout << endl;
+
+	for (int i = 1; i <= numOfBanana; i++)
+	{
+		ans += (price * i);
+	}
+		if (ans > balance)
+		{
+			ans -= balance;
+			cout << ans;
+			return 0;
+		}
+		else
+			cout << "0";
+		return 0;
+	
+}
