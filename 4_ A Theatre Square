@@ -1,0 +1,22 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	long long n, m, a, Number_of_stones, s, o;
+	cin >> n >> m >> a  ;
+	if (n % a == 0) {
+		s = n/a;
+	}
+	else {
+		s = (n / a) + 1;
+	}
+	if (m % a == 0) {
+		o = m/a;
+	}
+	else {
+		o = (m / a) + 1;
+	}
+	Number_of_stones = s*o;
+	cout << Number_of_stones;
+	return 0;
+}
