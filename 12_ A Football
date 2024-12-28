@@ -1,0 +1,25 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	string a;
+	int ans = 1;
+	cin >> a;
+	for (int i = 0; i < a.size(); i++)
+	{
+		if (a[i] == a[i + 1])
+		{
+			ans++;
+			if (ans == 7)
+			{
+				cout << "YES";
+				return 0;
+			}
+		}
+		
+		else
+			ans = 1;
+	}
+	cout << "NO";
+	return 0;
+}
